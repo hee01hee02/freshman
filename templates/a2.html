@@ -1,0 +1,27 @@
+<html>
+<head>
+  
+</head>
+<body>
+    <h1 style="color:aqua; text-align: center;">밖에 비온다 주륵주륵</h1>
+    <h2 style="color:red; text-align: center; text-decoration-line:underline;">
+    집ASAP</h2>
+    
+    <p style="text-align:center ;">출근 : {{ 출근시간 }}</p>
+    <p style="text-align:center ;">퇴근 : {{ 퇴근시간 }}</p>
+    <p style="text-align:center; font-size: small;
+    color: rgb(174, 0, 255);">코로나로 인한 변동이 생길 수 있음</p>
+    
+</body>
+
+<footer>
+    <h3 style="text-align:center ;"><< 회원 >></h3>
+    <ul>
+    {% for 회원들은 in 회원 %}
+    <li style="text-align: center;">{{회원들은}}</li>
+    {% endfor %}
+    </ul>
+    
+</footer>
+
+</html>

@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<a href="{% url 'homepage:List' %}" 
+style="text-decoration:none;margin-left:80% ;text-decoration: none;font-weight: 900;background-color: rgb(215, 208, 234);
+padding-inline: 30px;padding-top: 10px;padding-bottom: 10px;border-radius: 50px;">Back to List</a>
+<h2 style="text-align:center;">Login</h2>
+<form style="margin-left: 30px;" method="post">
+    {% csrf_token %}
+<p style="margin-top:50px;">{{form.as_p}}</p>
+<button style="margin-left: 350px;"type ="submit">Sign in</button>
+</form>
+{%endblock content%}
